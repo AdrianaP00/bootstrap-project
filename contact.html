@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesGallery.css" />
+    <title>Travel.co</title>
+    <meta name="description" content="home">
+    <style>
+      body {
+          height: 100vh;
+          margin: 0; 
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+
+      main {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .form {
+          width: 60%;
+          max-width: 600px;
+      }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel.co</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discover
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                            <li><a class="dropdown-item" href="event.html">Event</a></li>
+                            <li><a class="dropdown-item" href="news.html">News</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+    </div>
+  </header>
+  <body>
+    <main class="container">
+      <div class="title display-3">Contact us</div>
+      <div class="title-info lead">We'll get back to you soon!</div>
+  
+      <form action="http://vip.groupehn.com:20003/html/infospost.php" method="post" class="form">
+        <div class="form-group">
+          <input type="text" name="first_name" id="firstname" class="form-control" placeholder="First name">
+          <label for="first-name">First name</label>
+        </div>
+  
+        <div class="form-group">
+          <input type="text" name="last_name" id="lastname" class="form-control" placeholder="Last Name">
+          <label for="last-name">Last name</label>
+        </div>
+  
+        <div class="form-group">
+          <input type="email" name="e-mail" id="e-mail" class="form-control" placeholder="e-mail">
+          <label for="e-mail">e-mail</label>
+        </div>
+  
+        <div class="form-group">
+          <select id="country" name="country" class="form-control" placeholder="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <textarea name="message" id="message" rows="5" class="form-control" placeholder="Message"></textarea>
+          <label for="message">Message</label>
+        </div>
+  
+        <div class="button-div">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </main>
+    <footer class="bg-dark text-white">
+      <div class="container py-5 text-center">
+          <h4>Travel.co</h4>
+          <div class="social__icons">
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-linkedin-fill"></i></span>
+          </div>
+          <p>
+              Travel makes one modest. You see what a tiny place you occupy in the world.
+          </p>
+      </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV5mcpwGH3NEc8dDl8spR1Ous2BAjFU10ZIIYzr5lD73fJqEXA91djQz16Npq" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+ 
